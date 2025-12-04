@@ -1,0 +1,28 @@
+{
+  "name": "balanced-bites-ebook-site",
+  "version": "1.0.0",
+  "description": "Landing page and checkout site for the Balanced Bites ebook with Stripe payments.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "ebook",
+    "stripe",
+    "checkout",
+    "landing-page"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "stripe": "^16.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
+
+
