@@ -12,8 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const buyTop = document.getElementById('buy-button');
   const buyBottom = document.getElementById('buy-button-bottom');
+  const navToggle = document.querySelector('.nav-toggle');
   if (buyTop) buyTop.addEventListener('click', notifyComingSoon);
   if (buyBottom) buyBottom.addEventListener('click', notifyComingSoon);
+
+  if (navToggle) {
+    navToggle.addEventListener('click', () => {
+      const links = document.querySelector('.nav-links');
+      if (!links) return;
+      const isOpen = links.classList.toggle('nav-links-open');
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  }
 });
 
 
